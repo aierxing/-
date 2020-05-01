@@ -47,7 +47,6 @@ public class AlipayController {
         parameterMap.forEach((key, value) -> notifyBuild.append(key + "=" + value[0] + "\n") );
         log.info(notifyBuild.toString());
 
-        // https://docs.open.alipay.com/54/106370
         // 获取支付宝POST过来反馈信息
         Map<String,String> params = new HashMap<>();
         Map requestParams = request.getParameterMap();
