@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: sa
+    url: jdbc:sqlserver://116.62.239.165:1433;databaseName=aliyun
+    password: 02580258@lL
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+
+logging:
+  level:
+    com:
+      lei:
+        boot:
+          mapper: debug;
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.lei.boot.dao
